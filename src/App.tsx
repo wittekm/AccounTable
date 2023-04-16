@@ -21,6 +21,8 @@ const App = (props: { message: string }) => {
 
 const root = document.getElementById('root');
 ReactDOM.render(
-  <App message="Hello World! Simple Counter App built on ESBuild + React + Typescript"/>,
+      <React.StrictMode>
+        <App message="Hello World! Simple Counter App built on ESBuild + React + Typescript"/>
+      </React.StrictMode>,
   root
 );
